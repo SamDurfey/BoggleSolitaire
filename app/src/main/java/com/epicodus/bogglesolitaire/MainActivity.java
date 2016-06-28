@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // mRandomLetters.setText(random string function result)
                 for ( Integer index = 0 ; index < boggleLetters.length; index++ ) {
-                    String letter = String.valueOf(alphabet.charAt(randGen.nextInt(25)));
+                    String letter = String.valueOf(alphabet.charAt(randGen.nextInt(26)));
                     boggleLetters[index] = letter;
                 }
                 Log.d("Result: ", Arrays.toString(boggleLetters));
